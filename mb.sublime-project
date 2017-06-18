@@ -1,0 +1,29 @@
+{
+	"build_systems":
+	[
+		{
+			"name": "runserver",
+			"shell_cmd": "/home/doe/.pyenv/shims/python manage.py runserver"
+		},
+		{
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "Anaconda Python Builder",
+			"selector": "source.python",
+			"shell_cmd": "\"/home/doe/.pyenv/shims/python\" -u \"$file\""
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"python_interpreter": "/home/doe/.pyenv/shims/python",
+		 "extra_paths":
+		        [
+		            "/home/doe/.pyenv/versions/financebuddyenv/lib/python3.6/site-packages",
+		        ],
+	}
+}
